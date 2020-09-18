@@ -93,7 +93,7 @@ cd zigbee2mqtt
 sudo npm ci
 ```
 ***OPTIONAL: Now, change the `devices.js` file in  `node_modules/zigbee-herdsman-converters` directory:***
-Download devices.js from Hoo Repo which includes some additional supported devices, and replace it with the file in `zigbee2mqtt/node_modules/zigbee-herdsman-converters/devices.js`
+Download devices.js from Hoo Repo `https://github.com/HooControlsInc/Zigbee2Mqtt/blob/master/node_modules/zigbee-herdsman-converters/devices.js` which includes some additional supported devices, and replace it with the file in `zigbee2mqtt/node_modules/zigbee-herdsman-converters/devices.js`
 ```
 ```
 
