@@ -33,7 +33,9 @@ If it is 12.0+ or newer, then it's fine!
 But, in case if the version is older, then you need to download the latest package from node website and intall it:
 ```
 sudo apt install -y curl
+```
 
+```
 # Using Ubuntu
 curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
 sudo apt-get install -y nodejs
