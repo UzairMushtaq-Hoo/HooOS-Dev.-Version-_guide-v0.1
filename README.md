@@ -201,7 +201,7 @@ sudo nano app.module.ts
 
 and change the ip in `hostname` field.
 
-### (c) WiFi Adaptet Drivers
+### (c) WiFi Adapter Drivers
 In case, you are using WiFi adapter and your PC doesn't recognize the external adapter then you need to install relavent drivers.
 For Kernel 4.15.x ~ 5.8.x (Linux Mint, Ubuntu or Debian Derivatives)
 #### Drivers Instalation Guide:
