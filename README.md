@@ -178,7 +178,7 @@ localhost:4200
 
 
 ## 4. Optional
-### Install Google Chrome (Firefox may not support touch functionality):
+### (a) Install Google Chrome (Firefox may not support touch functionality):
 Download the latest version of google chrome according to the system's architecture:
 ```
 cd ~
@@ -191,7 +191,7 @@ sudo dpkg -i google-chrome-stable_current_amd64.deb
 Run:
 `google-chrome-stable` or `google-chrome`
 
-### How to change MQTT Broker IP:
+### (b) How to change MQTT Broker IP:
 Navigate to the app folder in HooOS directory and edit `app.module.ts` file:
 ```
 cd ~/HooOS/src/app
@@ -201,7 +201,7 @@ sudo nano app.module.ts
 
 and change the ip in `hostname` field.
 
-### WiFi Adaptet Drivers
+### (c) WiFi Adaptet Drivers
 In case, you are using WiFi adapter and your PC doesn't recognize the external adapter then you need to install relavent drivers.
 For Kernel 4.15.x ~ 5.8.x (Linux Mint, Ubuntu or Debian Derivatives)
 #### Drivers Instalation Guide:
