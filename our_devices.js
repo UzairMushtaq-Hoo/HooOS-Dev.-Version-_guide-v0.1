@@ -199,6 +199,14 @@
             await configureReporting.onOff(endpoint);
         },
     },
+	    
+    {
+        zigbeeModel: ['FNB56-ZCW39GD1.0'],
+        model: 'HGZB-06A',
+        vendor: 'Nue / 3A',
+        description: 'Smart 7W E27 light bulb',
+        extend: generic.light_onoff_brightness_colortemp_colorxy,
+    },	    
 
 {
         zigbeeModel: ['WarningDevice', 'WarningDevice-EF-3.0', 'SRHMP-I1'],
