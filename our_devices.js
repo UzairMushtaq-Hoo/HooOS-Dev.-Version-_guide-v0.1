@@ -223,7 +223,8 @@
             await configureReporting.batteryPercentageRemaining(endpoint);
         },
     },    
-    //Owon Touch 3-GANG
+
+//Owon Touch 3-GANG
     {
         zigbeeModel: [''],
         model: 'SLC628-3',
@@ -241,6 +242,9 @@
             await configureReporting.onOff(endpoint1);
             const endpoint2 = device.getEndpoint(17);
             await bind(endpoint2, coordinatorEndpoint, ['genOnOff']);
-            await configureReporting.onOff(endpoint16);
+            await configureReporting.onOff(endpoint2);
+	    const endpoint3 = device.getEndpoint(16);
+            await bind(endpoint2, coordinatorEndpoint, ['genOnOff']);
+            await configureReporting.onOff(endpoint3);
         },
     },
