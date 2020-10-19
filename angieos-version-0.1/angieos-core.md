@@ -1,6 +1,6 @@
 # angieOS Core
 
-
+![angieOS Core Diagram](../.gitbook/assets/image%20%284%29.png)
 
 angieOS Core is responsible for Home Control System as shown in Home Automation figure. The angieOS Core contains four parts which make this possible:
 
