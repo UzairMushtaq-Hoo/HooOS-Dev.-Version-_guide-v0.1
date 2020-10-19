@@ -10,11 +10,11 @@ Before we dive into the angieOS architecture, let's get a clear overview of the 
 
 angieOS has several components. Each component is responsible for a specific task. 
 
-**angieOS Core:** is the driver for each other component.
-
-
-
 ![](../.gitbook/assets/image%20%283%29.png)
 
-
+* **angieOS Core:** is the driver for each other component.
+* **Database:** Multiple databases are being used to store device statuses, Owners and Configuration settings.
+* **MQTT Broker:** 
+* **Protocol Parser:** 
+* **HW Interface:** asda
 
