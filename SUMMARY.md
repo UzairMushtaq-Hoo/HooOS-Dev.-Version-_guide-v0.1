@@ -1,10 +1,10 @@
 # Table of contents
 
 * [Overview](README.md)
-* [Architecture](architecture.md)
-* [angieOS Core](angieos-core.md)
 
-## Architecture <a id="architecture-1"></a>
+## angieOS version 0.1
 
-* [Untitled](architecture-1/untitled.md)
+* [Overview](angieos-version-0.1/untitled.md)
+* [Architecture](angieos-version-0.1/architecture.md)
+* [angieOS Core](angieos-version-0.1/angieos-core.md)
 
