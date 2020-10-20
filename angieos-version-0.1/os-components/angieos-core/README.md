@@ -1,6 +1,6 @@
 # angieOS Core
 
-angieOS Core is responsible for Home Control System as shown in Home Automation figure. The angieOS Core contains four parts which make this possible:
+angieOS Core is the brain and collaborator of all services and other components. It is responsible for Home Control System as explained in Home Automation basic architecture. angieOS Core contains six main parts which make this possible:
 
 * **Event Bus**: It allows the firing and listening of events, that keeps track of device status.
 * **Device Identification**: Identification of devices through device name and model and comparing them to a local supported devices database.
