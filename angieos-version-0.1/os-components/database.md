@@ -12,9 +12,9 @@ Databases used are:
 
 ![](../../.gitbook/assets/image%20%285%29.png)
 
-* \*\*\*\*[**Firebase**](https://firebase.google.com/)**:** Firebase Realtime No SQL database is used to communicate with the angieOS from remote locations with mobile apps and it keeps the data synchronized among all the systems.
+* \*\*\*\*[**Firebase**](https://firebase.google.com/)**:** Firebase Realtime No SQL database is used to communicate with the angieOS from remote locations with mobile apps and it keeps the data synchronized among all the systems. Each angieOS is marked as a new home in database.
 
-![](../../.gitbook/assets/image%20%286%29.png)
+![](../../.gitbook/assets/image%20%2818%29.png)
 
 
 
