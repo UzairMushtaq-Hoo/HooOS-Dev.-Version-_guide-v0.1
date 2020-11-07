@@ -175,7 +175,7 @@
         description: 'Zigbee AC dimmer',
         supports: 'on/off, brightness',
         fromZigbee: [fz.tuya_dimmer, fz.ignore_basic_report],
-        toZigbee: [tz.tuya_dimmer_state, tz.tuya_dimmer_level],
+        toZigbee: [tz.tuya_dimmer_state, tz.uzi_dimmer_control],
         meta: {configureKey: 1},
         configure: async (device, coordinatorEndpoint) => {
             const endpoint = device.getEndpoint(1);
