@@ -2595,12 +2595,12 @@ const converters = {
         },
     },
     uzi_dimmer_control: {
-        key: ['state', 'position'],
+        key: ['state', 'brightness'],
         convertSet: async (entity, key, value, meta) => {
             // Protocol description
             // https://github.com/Koenkk/zigbee-herdsman-converters/issues/1159#issuecomment-614659802
 
-            if (key === 'position') {
+            if (key === 'brightness') {
                 if (value >= -260 && value <= 260) {
                     const invert = !(meta.mapped.meta && meta.mapped.meta.coverInverted ?
                         !meta.options.invert_cover : meta.options.invert_cover);
