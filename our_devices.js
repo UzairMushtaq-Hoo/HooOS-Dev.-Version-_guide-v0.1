@@ -67,20 +67,28 @@
         },
     },
 
-//     {
-  //       zigbeeModel: ['lumi.switch.n3acn3'],
-    //     model: 'QBKG26LM',
-      //   vendor: 'Xiaomi',
-        // description: 'Aqara D1 3 gang smart wall switch (with neutral wire)',
-//         supports: 'on/off, power measurement',
-  //       fromZigbee: [fz.on_off, fz.xiaomi_power],
-    //     toZigbee: [tz.on_off],
-      //   meta: {multiEndpoint: true},
-        // endpoint: (device) => {
-//             return {'left': 1, 'center': 2, 'right': 3, 'system': 1};
-  //       },
-    //     onEvent: xiaomi.prevent_reset,
-    // },
+    {
+        zigbeeModel: ['lumi.switch.n3acn3'],
+        model: 'QBKG26LM',
+        vendor: 'Xiaomi',
+        description: 'Aqara D1 3 gang smart wall switch (with neutral wire)',
+        supports: 'on/off',
+        fromZigbee:[fz.on_off, fz.QBKG25LM_click, fz.xiaomi_operation_mode_opple, fz.xiaomi_power, fz.xiaomi_power_from_basic],
+        toZigbee: [tz.on_off, tz.xiaomi_switch_operation_mode, tz.xiaomi_switch_power_outage_memory, tz.xiaomi_switch_do_not_disturb],
+        meta: {configureKey: 1, multiEndpoint: true},
+        endpoint: (device) => {
+            return {'left': 1, 'center': 2, 'right': 3, 'system': 1};
+        },
+        configure: async (device, coordinatorEndpoint) => {
+            await bind(device.getEndpoint(1), coordinatorEndpoint, ['genOnOff']);
+            await bind(device.getEndpoint(2), coordinatorEndpoint, ['genOnOff']);
+            await bind(device.getEndpoint(3), coordinatorEndpoint, ['genOnOff']);
+            await configureReporting.onOff(device.getEndpoint(1));
+            await configureReporting.onOff(device.getEndpoint(2));
+            await configureReporting.onOff(device.getEndpoint(3));
+        },
+        onEvent: xiaomi.prevent_reset,
+},
     
         //~ {
         //~ zigbeeModel: ['CB432'],
